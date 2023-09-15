@@ -1,0 +1,76 @@
+:root {
+    --main-bg: #323232;
+    --main-color: #ffffff;
+    --secondary-color: #007BFF;
+    --main-padding: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#inchToMeter {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#inchToMeter .container {
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#inchToMeter .container h2 {
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#inchToMeter .container form {
+    width: 100%;
+}
+
+#inchToMeter .container form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#inchToMeter .container form .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 25px;
+    color: var(--main-color);
+}
+
+#inchToMeter .container form .input {
+    padding: 14px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#inchToMeter .container form button {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+#inchToMeter .container form .result {
+    background-color: #28A745;
+    display: flex;
+    align-items: center;
+}
